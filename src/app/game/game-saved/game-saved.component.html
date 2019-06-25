@@ -1,0 +1,5 @@
+<div *ngFor="let gameSaved of _gameSaved">
+  {{gameSaved.player_name}} 
+  <button (click)="_handleContinueClick(gameSaved.id)">Continue</button>
+  <button (click)="_handleDeleteClick(gameSaved.id)">Delete</button>
+</div>

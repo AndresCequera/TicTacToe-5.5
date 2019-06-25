@@ -1,0 +1,6 @@
+<header>
+    <h2>Welcome {{(_stateService.state$ | async).player_name}}</h2>
+    <h3>
+        {{ (_stateService.state$ | async).message }} {{ (_stateService.state$ | async).turn == 'PLAYERX' ? "Player 1 - Xs" : "Player 2 - 0s"}}
+    </h3>
+</header>
